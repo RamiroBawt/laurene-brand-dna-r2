@@ -1,0 +1,313 @@
+/* Laurène Brand DNA — Round 2 v3 comparison page CSS (4 philosophies, unified content) */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --primary: #540918;
+  --secondary: #9F8E87;
+  --tertiary: #E1DBD6;
+  --paper: #F5F1EC;
+  --ink: #1A1614;
+  --brass: #8C6B3F;
+  --rule: #C9C0B9;
+}
+
+body {
+  font-family: 'PT Serif', serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.55;
+}
+
+/* HEADER */
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--tertiary);
+  border-bottom: 1px solid var(--brass);
+  padding: 28px 48px;
+}
+.header-content { max-width: 1600px; margin: 0 auto; }
+.page-tagline {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  color: var(--primary);
+  font-size: 44px;
+  line-height: 1.0;
+}
+.brand-thesis {
+  font-family: 'PT Serif', serif;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.55;
+  margin-top: 12px;
+  max-width: 1100px;
+}
+.round-badge {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 10px;
+  border: 1px solid var(--primary);
+  padding: 6px 12px;
+}
+
+/* OPTION INTRO ROW */
+.option-intro-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 36px 48px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.option-card {
+  background: var(--tertiary);
+  padding: 24px;
+  border-top: 3px solid var(--primary);
+}
+.option-letter {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 11px;
+}
+.option-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  color: var(--ink);
+  font-size: 26px;
+  margin-top: 6px;
+  line-height: 1.1;
+}
+.option-tagline {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 1.3;
+}
+.palette-row {
+  display: flex;
+  gap: 6px;
+  margin-top: 16px;
+}
+.palette-swatch {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--rule);
+}
+
+/* PROSE BLOCKS */
+.prose-blocks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 36px 48px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.prose-block {
+  border-top: 2px solid var(--brass);
+  padding: 24px 0;
+}
+.prose-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  color: var(--primary);
+  font-size: 20px;
+  line-height: 1.15;
+}
+.prose-tagline {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 13px;
+  margin-top: 4px;
+}
+.prose-sub {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 10px;
+  margin-top: 14px;
+}
+.prose-block p {
+  font-family: 'PT Serif', serif;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.55;
+  margin-top: 6px;
+}
+.prose-pointer {
+  font-family: 'Playfair Display', serif !important;
+  font-style: italic !important;
+  color: var(--primary) !important;
+}
+
+/* COMPARISON SECTION */
+.comparison-section {
+  padding: 36px 48px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  color: var(--primary);
+  font-size: 34px;
+  line-height: 1.1;
+}
+.section-intro {
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  color: var(--ink);
+  font-size: 15px;
+  margin-top: 10px;
+  max-width: 800px;
+}
+.comparison-row {
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+.comparison-caption {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 11px;
+  margin-bottom: 14px;
+}
+.comparison-caption .dim {
+  color: var(--secondary);
+  margin-right: 10px;
+}
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.comparison-cell { background: var(--paper); }
+.comparison-cell img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.comparison-cell figcaption {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-size: 10px;
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* TABLE SECTION */
+.table-section {
+  padding: 36px 48px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  font-family: 'PT Serif', serif;
+}
+.comparison-table th {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 10px;
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--brass);
+  vertical-align: top;
+}
+.comparison-table td {
+  font-family: 'PT Serif', serif;
+  color: var(--ink);
+  font-size: 12px;
+  padding: 10px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+.comparison-table td:first-child {
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.04em;
+}
+
+/* CLOSING */
+.closing-prose {
+  padding: 56px 48px;
+  background: var(--tertiary);
+  margin-top: 36px;
+}
+.closing-prose__text {
+  max-width: 920px;
+  margin: 0 auto;
+}
+.closing-prose p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--ink);
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+/* FOOTER */
+.page-footer {
+  padding: 32px 48px;
+  background: var(--paper);
+  border-top: 1px solid var(--rule);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.page-footer p {
+  font-family: 'PT Serif', serif;
+  color: var(--secondary);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .option-intro-row,
+  .prose-blocks,
+  .comparison-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  .option-intro-row,
+  .prose-blocks,
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-tagline { font-size: 28px; }
+  .section-heading { font-size: 22px; }
+}

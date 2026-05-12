@@ -1,0 +1,12 @@
+node_modules/
+package-lock.json
+package.json
+render.mjs
+mock-templates/
+_revisions/
+_specs/
+_strategy/
+/option-a-market-insider-brief/
+/option-b-intimate-recommender/
+/option-c-positioned-expert/
+.DS_Store
